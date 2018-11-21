@@ -17,7 +17,6 @@ class CreateEcleticaTable extends Migration
             $table->integer('cliente_software_id')->unsigned();
             $table->foreign('cliente_software_id')->references('id')->on('cliente_software');
             $table->integer('cod_rede');
-            
             $table->string('cod_loja');
             $table->timestamps();
         });
